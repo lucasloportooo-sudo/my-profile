@@ -1,63 +1,283 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Profil de Lucas Lo Porto</title>
-  <meta name="description" content="Profil de Lucas Lo Porto, étudiant à l'IESEG et passionné d'entrepreneuriat.">
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alva Prépa | Préparation aux concours ACCES et SESAME</title>
+  <meta name="description" content="Alva Prépa propose une préparation optimisée aux concours ACCES et SESAME, centrée exclusivement sur les compétences clés, sans aucun superflu.">
+  <link rel="stylesheet" href="styles-improved.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <div class="container">
-    
-    <div class="card-white" id="introduction">
-      <h1>Lucas LO PORTO</h1>
-      <img src="photo_pro.jpg" alt="Photo de Lucas" class="img-circle">
-      <p>
-        Étudiant en 1ère année au Programme Grandes Écoles de l'IESEG School of Management (après un Bac mention Bien au Lycée Hoche). Je suis passionné par la création de projets, le marketing et le développement à l'international.
-      </p>
-      <a href="cv.pdf" target="_blank" class="btn-blue">Voir mon CV</a>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#accueil" class="logo">
+        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ALVA%20LOGO-irfATP3oKat2RnNGlggKL85yqNIJjZ.jpeg" alt="Alva Prépa" class="logo-img">
+      </a>
+      <nav class="nav-desktop">
+        <a href="#methode">La méthode</a>
+        <a href="#avantages">Nos avantages</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-primary header-cta">S'inscrire</a>
+      <button class="menu-toggle" aria-label="Menu" onclick="toggleMenu()">
+        <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+        <svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
     </div>
+    <nav class="nav-mobile hidden">
+      <a href="#methode" onclick="toggleMenu()">La méthode</a>
+      <a href="#avantages" onclick="toggleMenu()">Nos avantages</a>
+      <a href="#contact" onclick="toggleMenu()">Contact</a>
+      <a href="#contact" class="btn btn-primary" onclick="toggleMenu()">S'inscrire</a>
+    </nav>
+  </header>
 
-    <div class="card-white">
-      <h2>Entrepreneuriat 🚀</h2>
-      <p>
-        Passionné par le lancement de nouvelles activités et la concrétisation d'idées business. J'ai notamment fondé la structure <strong>ALVA PREPA</strong> (création web, stratégie marketing) et géré une auto-entreprise d'achat/revente de vêtements de luxe.
-      </p>
+  <!-- Hero Section -->
+  <section id="accueil" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Concours ACCES & SESAME</span>
+      <h1 class="hero-title">Intégrez l'école de vos rêves</h1>
+      <p class="hero-subtitle">Préparez les concours ACCES et SESAME avec une méthode chirurgicale, conçue par un expert du concours.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary btn-lg">Réserver ma place</a>
+        <a href="#methode" class="btn btn-outline btn-lg">En savoir plus</a>
+      </div>
     </div>
+  </section>
 
-    <div class="card-white">
-      <h2>Vente & Relation Client 🤝</h2>
-      <p>
-        J'aime le terrain ! Maraîcher sur les marchés de Viroflay depuis octobre 2021 et commercial en B2C/B2B (Miro), j'ai développé une grande capacité d'adaptation et le goût du contact client.
-      </p>
+  <!-- About Section -->
+  <section id="methode" class="about">
+    <div class="container">
+      <div class="about-header">
+        <span class="section-badge">La Méthode ALVA</span>
+        <h2 class="section-title">Une préparation ciblée pour des résultats concrets</h2>
+        <p class="section-subtitle">Notre approche se concentre exclusivement sur les compétences qui font la différence le jour J. Pas de contenu superflu, uniquement l'essentiel.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h3>Formation intensive</h3>
+          <p>Des sessions courtes et efficaces de 2h, conçues pour maximiser votre apprentissage.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <h3>Expertise reconnue</h3>
+          <p>Méthode créée par un étudiant expert des concours.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 20h9"></path>
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+            </svg>
+          </div>
+          <h3>L'essentiel uniquement</h3>
+          <p>Nous avons filtré 80% du contenu inutile pour vous faire gagner un temps précieux.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="card-white">
-      <h2>International 🌍</h2>
-      <p>
-        J'ai un fort attrait pour l'immersion dans des environnements étrangers et la compréhension des dynamiques interculturelles, appuyé par un niveau d'Anglais C1 et d'Espagnol B2.
-      </p>
+  <!-- Advantages Section -->
+  <section id="avantages" class="advantages">
+    <div class="container">
+      <div class="advantages-header">
+        <span class="section-badge">Nos Avantages</span>
+        <h2 class="section-title">Pourquoi choisir Alva Prépa ?</h2>
+        <p class="section-subtitle">Une formation pensée pour vous accompagner vers la réussite, avec des garanties concrètes.</p>
+      </div>
+      <div class="advantages-grid">
+        <div class="advantage-card">
+          <div class="advantage-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h3>Des cours flexibles</h3>
+          <p>Nos cours s'adaptent à votre rythme et à vos contraintes. Toutes les sessions se déroulent de 18h à 20h, répartis sur le mois que vous choisissez. Vous préparez vos concours sans contraindre vos activités.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+          </div>
+          <h3>Admis ou remboursé</h3>
+          <p>Nous croyons fermement en la puissance de la méthode ALVA. C'est pourquoi nous vous offrons une garantie unique : si vous ne décrochez pas au moins une admission dans une école, nous vous remboursons intégralement.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3>6 élèves par classes</h3>
+          <p>Pour un apprentissage optimisé, nous limitons chaque classe à seulement 6 élèves. Ce format réduit favorise l'interactivité, les échanges et un environnement propice à l'entraide.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+              <line x1="12" x2="12" y1="19" y2="22"></line>
+            </svg>
+          </div>
+          <h3>Un entretien Blanc en présentiel</h3>
+          <p>L'oral est une étape décisive dans votre admission. Nous vous préparons grâce à des entretiens blancs réalistes, par des experts. Nous vous donnerons les axes d'amélioration et vous arrivez aux oraux confiants, prêts à briller devant l'école de vos rêves.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="card-white">
-      <h2>Follow me</h2>
-      <ul class="list-inline">
-        <li>
-          <a href="https://www.linkedin.com/in/lucas-lo-porto-91b397384/" target="_blank">
-            <i class="fab fa-linkedin-in"></i> LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="mailto:lucas.loporto@yahoo.com" target="_blank">
-            <i class="fas fa-envelope"></i> Email
-          </a>
-        </li>
-      </ul>
+  <!-- Contact Form Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-badge">Inscription</span>
+          <h2 class="section-title">Prêt à intégrer votre prépa ?</h2>
+          <p class="section-subtitle">Remplissez le formulaire ci-contre pour réserver votre place. Nous vous recontacterons dans les plus brefs délais.</p>
+          <div class="contact-features">
+            <div class="contact-feature">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <span>Places limitées à 6 élèves par classe</span>
+            </div>
+            <div class="contact-feature">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <span>Réponse sous 24h</span>
+            </div>
+            <div class="contact-feature">
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <span>Sans engagement</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+              </div>
+              <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="telephone">Téléphone</label>
+              <input type="tel" id="telephone" name="telephone" placeholder="06 12 34 56 78" required>
+            </div>
+            <div class="form-group">
+              <label for="concours">Concours visé</label>
+              <select id="concours" name="concours" required>
+                <option value="">Sélectionnez un concours</option>
+                <option value="acces">ACCES</option>
+                <option value="sesame">SESAME</option>
+                <option value="les-deux">Les deux</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full btn-lg">Envoyer ma demande</button>
+          </form>
+        </div>
+      </div>
     </div>
+  </section>
 
-  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ALVA%20LOGO-irfATP3oKat2RnNGlggKL85yqNIJjZ.jpeg" alt="Alva Prépa" class="footer-logo">
+          <p>Préparation aux concours ACCES et SESAME</p>
+        </div>
+        <div class="footer-links">
+          <a href="#accueil">Accueil</a>
+          <a href="#methode">La méthode</a>
+          <a href="#avantages">Nos avantages</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alva Prépa. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
 
+  <script>
+    function toggleMenu() {
+      const navMobile = document.querySelector('.nav-mobile');
+      const menuIcon = document.querySelector('.menu-icon');
+      const closeIcon = document.querySelector('.close-icon');
+      
+      navMobile.classList.toggle('hidden');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    }
+
+    function handleSubmit(event) {
+      event.preventDefault();
+      alert('Merci pour votre inscription ! Nous vous recontacterons très bientôt.');
+      event.target.reset();
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
